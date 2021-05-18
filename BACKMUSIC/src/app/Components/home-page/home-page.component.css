@@ -1,0 +1,19 @@
+.row{
+    margin: 0;
+    background-color: #212121;
+}
+
+.home-page{
+    background-color: #212121;
+    border-style: solid;
+    border-color: #212121;
+    border-width: 1px;
+
+}
+
+.test{
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+

@@ -1,0 +1,90 @@
+.icons {
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: 5px 15px;
+}
+
+.row{
+    margin: 0;
+}
+
+.test{
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+.headerbox{
+    background-color: #B50FD1;
+    height: 35px;
+}
+
+.headertext{
+    color: #3DFFF8;
+}
+
+#logo{
+    margin-top: 4px;;
+    height: 90px;
+    width: auto;
+}
+
+.nav-wrapper{
+    background-color: #212121;
+}
+
+.nav-content{
+    background-color: #FF1E96;
+}
+
+.menu-buttons{
+    background-color: #FF1E96;
+}
+
+#search{
+    background-color: white;
+    height: 50px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav .button-collapse i {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+.z-depth-3 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.hoverable {
+    transition: box-shadow .25s;
+    box-shadow: 0;
+  }
+  
+  .hoverable:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 #3DFFF8, 0 6px 20px 0 #3DFFF8;
+  }
