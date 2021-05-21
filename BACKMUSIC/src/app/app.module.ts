@@ -12,6 +12,8 @@ import { PopularComponent } from './Components/popular/popular.component';
 import { SalesComponent } from './Components/sales/sales.component';
 import { ServicesComponent } from './Components/services/services.component';
 import { RecommendedComponent } from './Components/recommended/recommended.component';
+import { ProductListComponent } from './Components/product-list/product-list.component';
+import { ProductsComponent } from './Components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RecommendedComponent } from './Components/recommended/recommended.compo
     PopularComponent,
     SalesComponent,
     ServicesComponent,
-    RecommendedComponent
+    RecommendedComponent,
+    ProductListComponent,
+    ProductsComponent
     
   ],
   imports: [

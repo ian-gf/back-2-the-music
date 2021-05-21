@@ -24,6 +24,12 @@
     color: #3DFFF8;
 }
 
+.btn-large{
+    border-radius: 25px;
+    background-color: #212121;
+    color:#3DFFF8;
+}
+
 #logo{
     margin-top: 4px;;
     height: 90px;

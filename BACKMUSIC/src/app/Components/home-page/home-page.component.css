@@ -17,3 +17,20 @@
     border-color: red;
 }
 
+.n-text{
+    color: #6EFF4B;
+    
+}
+
+.s-text{
+    color: #FF7010 !important;
+}
+
+.p-text{
+    top: 120px;
+}
+
+.promo-img{
+    padding: 0;
+    width: auto;
+}
