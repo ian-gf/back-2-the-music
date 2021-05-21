@@ -1,17 +1,16 @@
-
 <div class="row">
     <div class="col l2">
       <div class="card">
         <div class="card-image">
-          <img src="assets/products/keystation-mk3.jpg">
+          <img src="assets/products/{{data.img}}.jpg">
         </div>
         <div class="card-content">
-          <p>Keyboards</p>
-          <span class="card-title">M-AUDIO - Keystation 49 MK3</span>
-          <small class="qty">1 piece</small>
+          <p class="cat">{{data.category}}</p>
+          <span class="card-title">{{data.title}}</span>
+          <small class="qty">{{data.qty}}</small>
         </div>
         <div class="card-action center-align">
-          <a href="#" class="btn">Add to cart</a>
+          <a class="btn modal-trigger" data-target="modal1">Add to cart</a>
         </div>
       </div>
     </div>

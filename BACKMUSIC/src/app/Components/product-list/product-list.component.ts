@@ -8,10 +8,26 @@ import { ProductsService } from '../../Services/products.service';
 })
 export class ProductListComponent implements OnInit {
 
-  constructor(private productService: ProductsService) { }
+  constructor(public productService: ProductsService) { }
 
   ngOnInit(): void {
-    console.log(this.productService.getProducts());
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, {});
+
+      this.getProducts();
+
+  }
+
+  getProducts(){
+    this.productService.getProducts().subscribe(
+      res => {
+        this.productService.products = res;
+        console.log(this.productService.products);
+      },
+      err => {
+        console.log(err);
+      }
+    )
   }
 
 }

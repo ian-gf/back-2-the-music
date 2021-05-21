@@ -1,8 +1,16 @@
 <div class="row>">
-    <div class="col l8">
-<app-products></app-products>
-<app-products></app-products>
-<app-products></app-products>
-    </div>
+    <div class="col l8 push-l1">
+        <app-products *ngFor="let product of productService.products" [data]= "product"></app-products>
 
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <app-landing-page></app-landing-page>
+            </div>
+            <div class="modal-footer">
+            <a href="/cart" class="modal-close waves-effect waves-green btn-flat">Add to cart</a>
+            </div>
+        </div>
+
+    </div>
 </div>
