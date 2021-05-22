@@ -1,62 +1,78 @@
+<!--HEADER-->
 <div class="row headerbox valign-wrapper">
-    <div class="col s5"></div>
-    <div class="col s4 push-s1 headertext">new products in store - <b><a href="/products/">buy now</a></b></div>
-    <div class="col s5"></div>
+    <div class="col s12 center-align headertext">new products in store - <b><a href="/products/">buy now</a></b></div>
 </div>
 
+<!--TOP NAVBAR-->
 <div>
   <nav>
     <div class="row nav-wrapper">
-      <a href="#" class="brand-logo col s2 push-s1"><img src="../../../assets/Resources/LOGOV4.png" id="logo"></a>
 
-      <ul id="nav-mobile" class="row right hide-on-med-and-down">
-        <li><a href="#help" class="col s12 pull-s12"><img src="../../../assets/Icons/help.png" class="icons">Help</a></li>
-        <li><a href="#user" class=" col s12 pull-s12"><img src="../../../assets/Icons/user.png" class="icons">User</a></li>
-        <li><a href="#cart" class=" col s12 pull-s12"><img src="../../../assets/Icons/cart.png" class="icons">Cart</a></li>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="hide-on-large-only">
+        <li><a href="#help" class="col s2"><img src="../../../assets/Icons/help.png" style="height: 35px; width: 35px; margin-top: 35px"></a></li>
       </ul>
 
+      <a href="/" class="brand-logo col s3 m2 l1 push-l2 push-m4 push-s2 center-align"><img src="../../../assets/Resources/LOGOV4.png" id="logo"></a>
+      
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#help" class="col s12 pull-s12 valign-wrapper"><img src="../../../assets/Icons/help.png" class="icons">Help</a></li>
+        <li><a href="#user" class="col s12 pull-s12 valign-wrapper"><img src="../../../assets/Icons/user.png" class="icons">User</a></li>
+        <li><a href="#cart" class="col s12 pull-s12 valign-wrapper"><img src="../../../assets/Icons/cart.png" class="icons">Cart</a></li>
+      </ul>
 
-          <form class="col s4 push-s1 valign-wrapper">
-                <div class="row hide-on-med-and-down">
-                    <div class="input-field col l10">
-                        <div class="col l12">
+      <ul id="nav-mobile" class="right hide-on-large-only">
+        <li><a href="#user" class="col s2 pull-s2 valign-wrapper"><img src="../../../assets/Icons/user.png" style="height: 35px; width: 35px; margin-top: 35px"></a></li>
+        <li><a href="#cart" class="col s2 pull-s2 valign-wrapper"><img src="../../../assets/Icons/cart.png" style="height: 35px; width: 35px; margin-top: 35px"></a></li>
+      </ul>
+
+      <!-----
+          <form class="test col s4 push-s1 push-l2 hide-on-med-and-down">
+                <div class="hide-on-med-and-down">
+                    <div class="col s6 input-field ">
+                        <div>
                             <input id="search" type="search">
                         </div>
-
-                    </div>
-                    <div class="col s2 valign-wrapper">
-                        <img src="../../../assets/Icons/search.png" class="icons">
+                        <div>
+                          <img src="../../../assets/Icons/search.png" class="icons">
+                        </div>
                     </div>
                 </div>
           </form>
- 
-        </div>
-    </nav>
+      !--->  
+      </div>
+  </nav>
 </div>
 
-<div>
+<!--SECOND NAVBAR -->
+<div class="hide-on-small-only">
   <nav>
     <div class="row nav-wrapper" style="background-color: #FF1E96; margin: 0%;">
       <ul class="row hide-on-med-and-down" id="nav-mobile">
-        <li routerLinkActive="active"><a routerLink="/products" class="waves-effect waves-light btn-large z-depth-3 hoverable">Departamentos</a></li>
-        <li routerLinkActive="active"><a routerLink="/popular" class="waves-effect waves-light btn-large z-depth-3 hoverable">Populares</a></li>
-        <li routerLinkActive="active"><a routerLink="/sales" class="waves-effect waves-light btn-large z-depth-3 hoverable">Ofertas</a></li>
-        <li routerLinkActive="active"><a routerLink="/services" class="waves-effect waves-light btn-large z-depth-3 hoverable">Servicios</a></li>
-        <li routerLinkActive="active"><a routerLink="/recommended" class="waves-effect waves-light btn-large z-depth-3 hoverable">Recomendados</a></li>
+        <li routerLinkActive="active"><a routerLink="/products" class="waves-effect waves btn-large z-depth-3 hoverable">Departaments</a></li>
+        <li routerLinkActive="active"><a routerLink="/popular" class="waves-effect waves btn-large z-depth-3 hoverable">Popular</a></li>
+        <li routerLinkActive="active"><a routerLink="/sales" class="waves-effect waves btn-large z-depth-3 hoverable">Sales</a></li>
+        <li routerLinkActive="active"><a routerLink="/services" class="waves-effect waves btn-large z-depth-3 hoverable">Services</a></li>
+        <li routerLinkActive="active"><a routerLink="/recommended" class="waves-effect waves btn-large z-depth-3 hoverable">Recommended</a></li>
       </ul>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      
     </div>
-
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="/departments">Departamentos</a></li>
-      <li><a href="/popular">Populares</a></li>
-      <li><a href="/sales">Ofertas</a></li>
-      <li><a href="/services">Servicios</a></li>
-      <li><a href="/recommended">Recomendados</a></li>
-    </ul>
 
 
   </nav>
 
 </div>
 
+<!---SIDENAV --->
+<div class="show-on-small">
+  <ul class="sidenav" id="mobile-demo">
+    <div class="background">
+      <img src="../../../assets/Resources/lmao.gif" style="height: 300px; width: 300px;">
+    </div>
+    <li><a href="/departments" style="color: #6EFF4B;">Departamentos</a></li>
+    <li><a href="/popular" style="color: #6EFF4B;">Populares</a></li>
+    <li><a href="/sales" style="color: #6EFF4B;">Ofertas</a></li>
+    <li><a href="/services" style="color: #6EFF4B;">Servicios</a></li>
+    <li><a href="/recommended" style="color: #6EFF4B;">Recomendados</a></li>
+  </ul>
+</div>

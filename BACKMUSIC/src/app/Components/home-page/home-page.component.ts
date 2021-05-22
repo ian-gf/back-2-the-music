@@ -17,6 +17,9 @@ export class HomePageComponent implements OnInit, AfterViewInit {
         fullWidth: true,
 
       });
+
+      
+
     });
 
     document.addEventListener('DOMContentLoaded', function() {

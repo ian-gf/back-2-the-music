@@ -24,6 +24,10 @@
     color: #3DFFF8;
 }
 
+.sidenav{
+    background-color: #B50FD1;
+}
+
 .btn-large{
     border-radius: 25px;
     background-color: #212121;
@@ -31,9 +35,8 @@
 }
 
 #logo{
-    margin-top: 4px;;
+    margin-top: 4px;
     height: 90px;
-    width: auto;
 }
 
 .nav-wrapper{
