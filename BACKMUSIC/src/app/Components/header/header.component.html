@@ -4,67 +4,53 @@
 </div>
 
 <!--TOP NAVBAR-->
-<div>
-  <nav>
-    <div class="row nav-wrapper">
-
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="hide-on-large-only">
-        <li><a href="#help" class="col s2"><img src="../../../assets/Icons/help.png" style="height: 35px; width: 35px; margin-top: 35px"></a></li>
-      </ul>
-
-      <a href="/" class="brand-logo col s3 m2 l1 push-l2 push-m4 push-s2 center-align"><img src="../../../assets/Resources/LOGOV4.png" id="logo"></a>
+<div style="margin-bottom: 41px;">
+  <nav> 
+    <div class="row nav-wrapper" style="background-color: #1a1a1a; height: 105px;">
+      <a href="#" data-target="mobile-demo" class="navbtn-s sidenav-trigger "><img src="../../../assets/Icons/menu.png" class="icons-s"></a>
+      <a href="/" class="first-nav brand-logo col s1 push-s2  hide-on-med-and-down"><img src="../../../assets/Resources/LOGOV4.png" class="logo"></a>
+      <a href="/" class="first-nav brand-logo hide-on-large-only"><img src="../../../assets/Resources/LOGOV4.png" class="logo"></a>
       
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#help" class="col s12 pull-s12 valign-wrapper"><img src="../../../assets/Icons/help.png" class="icons">Help</a></li>
-        <li><a href="#user" class="col s12 pull-s12 valign-wrapper"><img src="../../../assets/Icons/user.png" class="icons">User</a></li>
-        <li><a href="#cart" class="col s12 pull-s12 valign-wrapper"><img src="../../../assets/Icons/cart.png" class="icons">Cart</a></li>
+      <div class="navbtn-s col s3 push-s3 hide-on-med-and-down">
+        <form>
+          <div class="valign-wrapper input-field">
+            <input id="search" type="search" placeholder="Search for something...">
+            <label class=" label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons label-icon">close</i>
+          </div>
+        </form>
+      </div>
+
+      <ul id="nav-mobile" class="hide-on-med-and-down">
+        <li class="navbtn col s1 push-s4 "><a href="#help" class="btn-floating waves-effect waves hoverable"><img src="../../../assets/Icons/mini-help.png" class="icons"></a></li>
+        <li class="navbtn col s1 push-s4 "><a href="#user" class="btn-floating waves-effect waves hoverable"><img src="../../../assets/Icons/mini-user.png" class="icons"></a></li>
+        <li class="navbtn col s1 push-s4 "><a href="#cart" class="btn-floating waves-effect waves hoverable"><img src="../../../assets/Icons/mini-cart.png" class="icons"></a></li>
       </ul>
 
       <ul id="nav-mobile" class="right hide-on-large-only">
-        <li><a href="#user" class="col s2 pull-s2 valign-wrapper"><img src="../../../assets/Icons/user.png" style="height: 35px; width: 35px; margin-top: 35px"></a></li>
-        <li><a href="#cart" class="col s2 pull-s2 valign-wrapper"><img src="../../../assets/Icons/cart.png" style="height: 35px; width: 35px; margin-top: 35px"></a></li>
+        <li class="navbtn-s"><a href="#help" class="a-s hide-on-small-only "><img src="../../../assets/Icons/help.png" class="icons-s"></a></li>
+        <li class="navbtn-s"><a href="#user" class="a-s"><img src="../../../assets/Icons/user.png" class="icons-s"></a></li>
+        <li class="navbtn-s"><a href="#cart" class="a-s"><img src="../../../assets/Icons/cart.png" class="icons-s"></a></li>
       </ul>
 
-      <!-----
-          <form class="test col s4 push-s1 push-l2 hide-on-med-and-down">
-                <div class="hide-on-med-and-down">
-                    <div class="col s6 input-field ">
-                        <div>
-                            <input id="search" type="search">
-                        </div>
-                        <div>
-                          <img src="../../../assets/Icons/search.png" class="icons">
-                        </div>
-                    </div>
-                </div>
-          </form>
-      !--->  
       </div>
   </nav>
 </div>
 
-<!--SECOND NAVBAR -->
-<div class="hide-on-small-only">
-  <nav>
-    <div class="row nav-wrapper" style="background-color: #FF1E96; margin: 0%;">
-      <ul class="row hide-on-med-and-down" id="nav-mobile">
-        <li routerLinkActive="active"><a routerLink="/products" class="waves-effect waves btn-large z-depth-3 hoverable">Departaments</a></li>
-        <li routerLinkActive="active"><a routerLink="/popular" class="waves-effect waves btn-large z-depth-3 hoverable">Popular</a></li>
-        <li routerLinkActive="active"><a routerLink="/sales" class="waves-effect waves btn-large z-depth-3 hoverable">Sales</a></li>
-        <li routerLinkActive="active"><a routerLink="/services" class="waves-effect waves btn-large z-depth-3 hoverable">Services</a></li>
-        <li routerLinkActive="active"><a routerLink="/recommended" class="waves-effect waves btn-large z-depth-3 hoverable">Recommended</a></li>
-      </ul>
-      
-    </div>
-
-
-  </nav>
-
+<div class="row" style="background-color: #FF1E96; margin-top: 41px;">
+  <div>
+    <ul class="hide-on-med-and-down center-align" style="height: 60px; margin-left: 180px">
+      <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/products" class="waves-effect waves btn-large z-depth-3 hoverable">Departaments</a></li>
+      <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/popular" class="waves-effect waves btn-large z-depth-3 hoverable">Popular</a></li>
+      <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/sales" class="waves-effect waves btn-large z-depth-3 hoverable">Sales</a></li>
+      <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/services" class="waves-effect waves btn-large z-depth-3 hoverable">Services</a></li>
+      <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/recommended" class="waves-effect waves btn-large z-depth-3 hoverable">Recommended</a></li>
+    </ul>
+  </div>
 </div>
 
 <!---SIDENAV --->
-<div class="show-on-small">
+<div>
   <ul class="sidenav" id="mobile-demo">
     <div class="background">
       <img src="../../../assets/Resources/lmao.gif" style="height: 300px; width: 300px;">

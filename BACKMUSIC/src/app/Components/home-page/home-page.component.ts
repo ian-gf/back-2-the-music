@@ -18,8 +18,6 @@ export class HomePageComponent implements OnInit, AfterViewInit {
 
       });
 
-      
-
     });
 
     document.addEventListener('DOMContentLoaded', function() {

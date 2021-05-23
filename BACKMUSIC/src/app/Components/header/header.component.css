@@ -1,18 +1,72 @@
 .icons {
-    color: white;
-    height: 50px;
-    width: 50px;
-    margin: 5px 15px;
+    height: 85px;
+    width: auto;
+    
+}
+
+.icons-s{
+    height:  30px;
+    width:auto;
+    margin-top: 40px;
+    margin-left: 16px;
+}
+
+.logo{
+    height: 90px;
+    width: auto;
+    margin-top: 7px;
+}
+
+.label-icon{
+    margin-top: 17px;
+    margin-left: 8px;
 }
 
 .row{
-    margin: 0;
+    margin: 0px;
+}
+
+.first-nav{
+    height: 100px;
+}
+
+.btn-floating{
+    margin-left: 5px;
+    margin-top: 6px;
+    height: 85px;
+    width: 85px;
+
+}
+
+.sidenav{
+    background-color: #FF1E96;
+}
+
+.navbtn{
+    height: 104px;
+    width: auto;
+}
+
+.navbtn-s{
+    height: 104px;
+    width: 65px;
+}
+
+.a-s{
+    padding: 0;
+    height:104px;
 }
 
 .test{
     border-width: 1px;
     border-style: solid;
     border-color: red;
+}
+
+.test2{
+    border-width: 0.1px;
+    border-style: ridge;
+    border-color: #1a1a1a;
 }
 
 .headerbox{
@@ -24,64 +78,32 @@
     color: #3DFFF8;
 }
 
-.sidenav{
-    background-color: #B50FD1;
-}
-
 .btn-large{
     border-radius: 25px;
     background-color: #212121;
     color:#3DFFF8;
+    width: 180px;
+
 }
 
-#logo{
-    margin-top: 4px;
-    height: 90px;
+.menu2-btn{
+    height: 80px;
 }
 
-.nav-wrapper{
+.btn-floating{
     background-color: #212121;
-}
-
-.nav-content{
-    background-color: #FF1E96;
 }
 
 .menu-buttons{
     background-color: #FF1E96;
+    
 }
 
 #search{
-    background-color: white;
+    background-color: #212121;
     height: 50px;
     margin: 10px;
     border-radius: 25px;
-}
-
-nav {
-    height: 100px;
-    line-height: 100px;
-}
-
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    height: 100px;
-    line-height: 100px;
-}
-
-nav .button-collapse i {
-    height: 100px;
-    line-height: 100px;
-}
-
-nav .brand-logo { 
-    font-size: 1.6rem; 
-}
-
-@media only screen and (min-width: 601px){
-    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-        height: 100px;
-        line-height: 100px;
-    }
 }
 
 .z-depth-3 {
@@ -93,7 +115,13 @@ nav .brand-logo {
     box-shadow: 0;
   }
   
-  .hoverable:hover {
+.hoverable:hover {
     transition: box-shadow .25s;
     box-shadow: 0 8px 17px 0 #3DFFF8, 0 6px 20px 0 #3DFFF8;
+  }
+
+.active a{
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 #6EFF4B, 0 6px 20px 0 #6EFF4B;
+    color: #6EFF4B;
   }
