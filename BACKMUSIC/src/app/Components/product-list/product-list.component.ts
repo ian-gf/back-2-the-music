@@ -14,9 +14,8 @@ export class ProductListComponent implements OnInit {
       var elems = document.querySelectorAll('.modal');
       var instances = M.Modal.init(elems, {});
 
-      var cat = 'Microphones';
-      //this.getProducts();
-      this.getProductsbyCategory(cat);
+      this.getProducts();
+      //this.getProductsbyCategory(cat);
   }
 
   getProducts(){

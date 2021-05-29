@@ -3,7 +3,11 @@ export interface Producto{
     title: string
     brand: string
     category: string
-    qty: string
+    price: string
     img: string
+    sale: string
+    sale_price: string
+    service: string
+    recommended: string
 
 }

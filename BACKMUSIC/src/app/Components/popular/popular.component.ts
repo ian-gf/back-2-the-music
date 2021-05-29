@@ -14,20 +14,22 @@ export class PopularComponent implements OnInit {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, {});
 
-    this.getProducts();
+    var pop = "true"
+    this.getPopular(pop);
 
 }
 
-getProducts(){
-  this.productService.getProducts().subscribe(
-    res => {
-      this.productService.products = res;
-      console.log(this.productService.products);
-    },
-    err => {
-      console.log(err);
-    }
-  )
-}
+  getPopular(pop: string | undefined){
+    this.productService.getPopular(pop).subscribe(
+      res => {
+        this.productService.products = res;
+        console.log(this.productService.products);
+      },
+      err => {
+        console.log(err);
+      }
+
+    )
+  }
 
 }

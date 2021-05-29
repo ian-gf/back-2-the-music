@@ -1,0 +1,40 @@
+.row{
+    margin: 0;
+}
+
+.card-image{
+    padding: 15px;
+}
+
+.btn{
+    border-radius: 25px;
+    background-color: #212121;
+    color:#3DFFF8;
+}
+
+.card{
+    margin: 10px;
+    background-color: #1a1a1a;
+}
+
+.card-title{
+    color: crimson !important;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.brand{
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.cat{
+
+}
+
+.qty{
+
+
+}

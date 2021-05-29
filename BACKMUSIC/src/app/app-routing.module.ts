@@ -28,13 +28,13 @@ const routes: Routes = [
   {path: 'services', component: ServicesComponent},
   {path: 'recommended', component: RecommendedComponent},
   {path: 'products', component: ProductListComponent},
-  {path: 'keyboards', component: KeyboardsComponent},
-  {path: 'microphones', component: MicrophonesComponent},
-  {path: 'toys', component: ToysComponent},
-  {path: 'headphones', component: HeadphonesComponent},
-  {path: 'electronic-drums', component: ElectronicDrumsComponent},
-  {path: 'dj-gear', component: DJGearComponent},
-  {path: 'controllers', component: ControllersComponent},
+  {path: 'products/keyboards', component: KeyboardsComponent},
+  {path: 'products/microphones', component: MicrophonesComponent},
+  {path: 'products/toys', component: ToysComponent},
+  {path: 'products/headphones', component: HeadphonesComponent},
+  {path: 'products/electronic-drums', component: ElectronicDrumsComponent},
+  {path: 'products/dj-gear', component: DJGearComponent},
+  {path: 'products/controllers', component: ControllersComponent},
 
 ];
 
