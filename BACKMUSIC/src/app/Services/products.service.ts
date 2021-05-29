@@ -7,12 +7,18 @@ import { Producto } from '../Models/product';
 })
 export class ProductsService {
   API_URL="http://localhost:3000/api/productos";
+  CAT_URL="http://localhost:3000/api/productos/cat/";
   products: Producto[] | undefined;
-  
+
   constructor(private http:HttpClient) { }
 
   getProducts(){
     return this.http.get<Producto[]>(this.API_URL);
+  }
+
+  getProductsbyCategory(cat: string | undefined){
+    
+    return this.http.get<Producto[]>(this.CAT_URL+cat);
   }
 
 }

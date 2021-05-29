@@ -14,8 +14,9 @@ export class ProductListComponent implements OnInit {
       var elems = document.querySelectorAll('.modal');
       var instances = M.Modal.init(elems, {});
 
-      this.getProducts();
-
+      var cat = 'Microphones';
+      //this.getProducts();
+      this.getProductsbyCategory(cat);
   }
 
   getProducts(){
@@ -27,6 +28,19 @@ export class ProductListComponent implements OnInit {
       err => {
         console.log(err);
       }
+    )
+  }
+
+  getProductsbyCategory(cat: string | undefined){
+    this.productService.getProductsbyCategory(cat).subscribe(
+      res => {
+        this.productService.products = res;
+        console.log(this.productService.products);
+      },
+      err => {
+        console.log(err);
+      }
+
     )
   }
 

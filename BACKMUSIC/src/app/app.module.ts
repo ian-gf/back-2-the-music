@@ -15,6 +15,13 @@ import { ServicesComponent } from './Components/services/services.component';
 import { RecommendedComponent } from './Components/recommended/recommended.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
 import { ProductsComponent } from './Components/products/products.component';
+import { KeyboardsComponent } from './Components/product-depts/Keyboards/keyboards.component';
+import { MicrophonesComponent } from './Components/product-depts/Microphones/microphones.component';
+import { ToysComponent } from './Components/product-depts/Toys/toys.component';
+import { HeadphonesComponent } from './Components/product-depts/Headphones/headphones.component';
+import { ElectronicDrumsComponent } from './Components/product-depts/Electronic-Drums/electronic-drums.component';
+import { DJGearComponent } from './Components/product-depts/DJ-Gear/dj-gear.component';
+import { ControllersComponent } from './Components/product-depts/Controllers/controllers.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +36,14 @@ import { ProductsComponent } from './Components/products/products.component';
     ServicesComponent,
     RecommendedComponent,
     ProductListComponent,
-    ProductsComponent
+    ProductsComponent,
+    KeyboardsComponent,
+    MicrophonesComponent,
+    ToysComponent,
+    HeadphonesComponent,
+    ElectronicDrumsComponent,
+    DJGearComponent,
+    ControllersComponent
     
   ],
   imports: [

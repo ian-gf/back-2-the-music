@@ -11,6 +11,14 @@ import { RecommendedComponent } from './Components/recommended/recommended.compo
 
 import { ProductListComponent } from './Components/product-list/product-list.component';
 
+import { KeyboardsComponent } from './Components/product-depts/Keyboards/keyboards.component';
+import { MicrophonesComponent } from './Components/product-depts/Microphones/microphones.component';
+import { ToysComponent } from './Components/product-depts/Toys/toys.component';
+import { HeadphonesComponent } from './Components/product-depts/Headphones/headphones.component';
+import { ElectronicDrumsComponent } from './Components/product-depts/Electronic-Drums/electronic-drums.component';
+import { DJGearComponent } from './Components/product-depts/DJ-Gear/dj-gear.component';
+import { ControllersComponent } from './Components/product-depts/Controllers/controllers.component';
+
 const routes: Routes = [
   {path: '', component: HomePageComponent},
   {path: 'landing', component: LandingPageComponent},
@@ -19,7 +27,14 @@ const routes: Routes = [
   {path: 'sales', component: SalesComponent},
   {path: 'services', component: ServicesComponent},
   {path: 'recommended', component: RecommendedComponent},
-  {path: 'products', component: ProductListComponent}
+  {path: 'products', component: ProductListComponent},
+  {path: 'keyboards', component: KeyboardsComponent},
+  {path: 'microphones', component: MicrophonesComponent},
+  {path: 'toys', component: ToysComponent},
+  {path: 'headphones', component: HeadphonesComponent},
+  {path: 'electronic-drums', component: ElectronicDrumsComponent},
+  {path: 'dj-gear', component: DJGearComponent},
+  {path: 'controllers', component: ControllersComponent},
 
 ];
 
