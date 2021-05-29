@@ -11,6 +11,7 @@ export class ProductsService {
   REC_URL="http://localhost:3000/api/productos/rec/";
   SER_URL="http://localhost:3000/api/productos/ser/";
   POP_URL="http://localhost:3000/api/productos/pop/";
+  SALE_URL="http://localhost:3000/api/productos/sales/"
 
   products: Producto[] | undefined;
 
@@ -34,6 +35,10 @@ export class ProductsService {
 
   getPopular(pop: string | undefined){
     return this.http.get<Producto[]>(this.POP_URL+pop);
+  }
+
+  getSales(sale: string | undefined){
+    return this.http.get<Producto[]>(this.SALE_URL+sale);
   }
 
 }

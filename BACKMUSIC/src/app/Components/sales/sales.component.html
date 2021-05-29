@@ -1,1 +1,26 @@
-<p>sales works!</p>
+<div class="row hide-on-large-only" style="background-color: #FF1E96;">
+    <div class="col s12">
+        <h5 style="color: white">On sale now!</h5>
+    </div>
+</div>
+
+<div class="row" style="background-color: #121212;">
+    <div class="col l3 hide-on-med-and-down">
+        <h3 style="color: white">On sale now!</h3>
+    </div>
+
+    <div class="col s12 l9 " style="background-color: #212121;">
+        <app-products *ngFor="let product of productService.products" [data]= "product"></app-products>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <app-landing-page></app-landing-page>
+            </div>
+            <div class="modal-footer">
+            <a href="/cart" class="modal-close waves-effect waves-green btn-flat">Add to cart</a>
+            </div>
+        </div>
+
+    </div>
+</div>

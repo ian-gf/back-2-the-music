@@ -9,5 +9,6 @@ export interface Producto{
     sale_price: string
     service: string
     recommended: string
+    popular: string
 
 }
