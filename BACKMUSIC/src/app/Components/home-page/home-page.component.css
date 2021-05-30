@@ -3,12 +3,39 @@
     background-color: #1a1a1a;
 }
 
+.odd{
+    background-color: #121212;
+}
+
+.top-row{
+    margin: 15px;
+}
+
 .home-page{
     background-color: #212121;
     border-style: solid;
     border-color: #212121;
     border-width: 1px;
 
+}
+
+.car-big{
+    max-height: 800px;
+    margin:20px 0px;
+}
+
+.car-small{
+    max-height: 160px;
+    margin:20px 0px;
+}
+
+.car-div{
+    background-color: #212121 !important;
+}
+
+.gal-div{
+    background-color: #121212;
+    height:270px;
 }
 
 .test{
@@ -18,15 +45,40 @@
 }
 
 .n-text{
-    color: #6EFF4B;
-    
+    color: #6EFF4B;   
 }
 
 .s-text{
     color: #FF7010 !important;
-} 
+}
+
+.g-text{
+    color: #6EFF4B !important;
+    font-size: 32px;
+}
+
+.o-text{
+    color: #FF7010 !important;
+    font-size: 32px;
+}
+
+.b-text{
+    color: #3DFFF8 !important;
+    font-size: 32px;
+}
+
+.p-text{
+    color: #FF1E96 !important;
+    font-size: 32px;
+}
 
 .promo-img{
-    padding: 0;
-    width: auto;
+    padding: 0px;
+    height: 250px;
+    width: 300px;
+}
+
+.promo-text{
+    height: 257px;
+    width: 300px;
 }

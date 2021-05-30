@@ -2,3 +2,25 @@
     background-color: #FF1E96;
 
 }
+
+.s-icon{
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.modal{
+    background-color: #212121;
+}
+
+.modal-content{
+    color:#3DFFF8;
+}
+
+.modal-footer{
+    background-color: #212121;
+    
+}
+
+.btn-flat{
+    color:white;
+}

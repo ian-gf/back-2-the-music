@@ -1,26 +1,25 @@
-<div class="row hide-on-large-only" style="background-color: #FF1E96;">
+<div class="row hide-on-large-only small-row">
     <div class="col s12">
-        <h5 style="color: white">Popular</h5>
+        <h5 class="row-title">Popular</h5>
     </div>
 </div>
 
-<div class="row" style="background-color: #121212;">
+<div class="row odd">
     <div class="col l3 hide-on-med-and-down">
-        <h3 style="color: white">Popular</h3>
+        <h3 class="row-title">Popular</h3>
     </div>
 
-    <div class="col s12 l9 " style="background-color: #212121;">
+    <div class="col s12 l9 even">
         <app-products *ngFor="let product of productService.products" [data]= "product"></app-products>
 
         <!-- Modal Structure -->
         <div id="modal1" class="modal" >
 
-            <div class="modal-content" style="background-color: #212121 !important;  height:400px;">
+            <div class="modal-content even modal-h">
                 <app-landing-page></app-landing-page>
-                <a href="/cart" class="modal-close waves-effect waves-green btn-flat">Add to cart</a>
+                <a  class="modal-close waves-effect waves-green btn-flat">Add to cart</a>
             </div>
         
         </div>
-
     </div>
 </div>

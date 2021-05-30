@@ -1,7 +1,27 @@
 .row{
-        margin: 0px;
+    margin: 0px;
+}
+
+.odd{
+    background-color: #121212;
+}
+
+.even{
+    background-color: #212121;
+}
+
+.small-row{
+    background-color: #FF1E96;
+}
+
+.row-title{
+    color: white;
+}
+
+.modal-h{
+    height:400px;
 }
 
 .modal-close{
-        color: white;
+    color: white;
 }

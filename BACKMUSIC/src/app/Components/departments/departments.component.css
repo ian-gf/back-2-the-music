@@ -2,6 +2,22 @@
     margin: 0;
 }
 
+.odd{
+    background-color: #121212;
+}
+
+.even{
+    background-color: #212121;
+}
+
+.small-row{
+    background-color: #FF1E96;
+}
+
+.row-title{
+    color: white;
+}
+
 .card-image{
     padding: 15px;
 }
@@ -27,14 +43,5 @@
 .brand{
     font-size: medium;
     font-weight: bold;
-
-}
-
-.cat{
-
-}
-
-.qty{
-
 
 }
