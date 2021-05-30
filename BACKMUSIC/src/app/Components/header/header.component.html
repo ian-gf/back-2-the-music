@@ -6,11 +6,12 @@
 <!--TOP NAVBAR-->
 <div style="margin-bottom: 41px;">
   <nav> 
-    <div class="row nav-wrapper" style="background-color: #1a1a1a; height: 105px;">
+    <div class="row nav-wrapper top-bar">
       <a href="#" data-target="mobile-demo" class="navbtn-s sidenav-trigger "><img src="../../../assets/Icons/menu.png" class="icons-s"></a>
-      <a href="/" class="first-nav brand-logo col s1 push-s2  hide-on-med-and-down"><img src="../../../assets/Resources/LOGOV4.png" class="logo"></a>
+      <a href="/" class="first-nav brand-logo col s1 push-s2 hide-on-med-and-down"><img src="../../../assets/Resources/LOGOV4.png" class="logo"></a>
       <a href="/" class="first-nav brand-logo hide-on-large-only"><img src="../../../assets/Resources/LOGOV4.png" class="logo"></a>
       
+      <!---SEARCH BAR--->
       <div class="navbtn-s col s3 push-s3 hide-on-med-and-down">
         <form>
           <div class="valign-wrapper input-field">
@@ -21,25 +22,62 @@
         </form>
       </div>
 
+      <!---MENU BUTTONS--->
       <ul id="nav-mobile" class="hide-on-med-and-down">
-        <li class="navbtn col s1 push-s4 "><a href="#help" class="btn-floating hoverable"><img src="../../../assets/Icons/mini-help.png" class="icons"></a></li>
-        <li class="navbtn col s1 push-s4 "><a href="#user" class="btn-floating hoverable"><img src="../../../assets/Icons/mini-user.png" class="icons"></a></li>
-        <li class="navbtn col s1 push-s4 "><a href="#cart" class="btn-floating hoverable"><img src="../../../assets/Icons/mini-cart.png" class="icons"></a></li>
+        <li class="navbtn col s1 push-s4 "><a href="#modal-help" class="btn-floating hoverable modal-trigger"><img src="../../../assets/Icons/mini-help.png" class="icons"></a></li>
+        <li class="navbtn col s1 push-s4 "><a href="#modal-user" class="btn-floating hoverable modal-trigger"><img src="../../../assets/Icons/mini-user.png" class="icons"></a></li>
+        <li class="navbtn col s1 push-s4 "><a href="#modal-cart" class="btn-floating hoverable modal-trigger"><img src="../../../assets/Icons/mini-cart.png" class="icons"></a></li>
       </ul>
 
       <ul id="nav-mobile" class="right hide-on-large-only">
-        <li class="navbtn-s"><a href="#help" class="a-s hide-on-small-only "><img src="../../../assets/Icons/help.png" class="icons-s"></a></li>
-        <li class="navbtn-s"><a href="#user" class="a-s"><img src="../../../assets/Icons/user.png" class="icons-s"></a></li>
-        <li class="navbtn-s"><a href="#cart" class="a-s"><img src="../../../assets/Icons/cart.png" class="icons-s"></a></li>
+        <li class="navbtn-s"><a href="#modal-help" class="a-s hide-on-small-only modal-trigger"><img src="../../../assets/Icons/help.png" class="icons-s"></a></li>
+        <li class="navbtn-s"><a href="#modal-user" class="a-s modal-trigger"><img src="../../../assets/Icons/user.png" class="icons-s"></a></li>
+        <li class="navbtn-s"><a href="#modal-cart" class="a-s modal-trigger"><img src="../../../assets/Icons/cart.png" class="icons-s"></a></li>
       </ul>
+
+      <!--- MODALS --->
+      <!--- Modal Structure -->
+      <div id="modal-help" class="modal">
+          <div class="modal-content">
+              <h3>Help</h3>
+              <p>If you're feeling lost around the page, you can scroll down to the bottom and click the Site Map button<br>This will show you a map of the site.</p>
+          </div>
+
+          <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+      </div>
+
+      <!--- Modal Structure -->
+      <div id="modal-user" class="modal">
+        <div class="modal-content">
+          <h3>User</h3>
+          <p>Here you can log in and check your profile.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+
+      <!--- Modal Structure -->
+      <div id="modal-cart" class="modal">
+        <div class="modal-content">
+          <h4>Cart</h4>
+          <p>Here you can check the products you have in your cart.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
 
       </div>
   </nav>
 </div>
 
-<div class="row" style="background-color: #FF1E96; margin-top: 41px;">
+<!--- MIDDLE ROW --->
+<div class="row top-row">
   <div>
-    <ul class="hide-on-med-and-down center-align" style="height: 60px; margin-left: 180px">
+    <ul class="hide-on-med-and-down center-align top-btns">
       <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/departments" class="waves-effect waves btn-large z-depth-3 hoverable">Departaments</a></li>
       <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/popular" class="waves-effect waves btn-large z-depth-3 hoverable">Popular</a></li>
       <li class="col s2 valign-wrapper menu2-btn" routerLinkActive="active"><a routerLink="/sales" class="waves-effect waves btn-large z-depth-3 hoverable">Sales</a></li>
@@ -53,13 +91,13 @@
 <div>
   <ul class="sidenav" id="mobile-demo">
     <div class="background">
-      <img src="../../../assets/Resources/lmao.gif" style="height: 300px; width: 300px;">
+      <img src="../../../assets/Resources/lmao.gif" class="side-img">
     </div>
-    <li><a href="/" style="color: #3DFFF8;">Home</a></li>
-    <li><a href="/departments" style="color: #6EFF4B">Departaments</a></li>
-    <li><a href="/popular" style="color: #6EFF4B;">Popular</a></li>
-    <li><a href="/sales" style="color: #6EFF4B;">Sales</a></li>
-    <li><a href="/services" style="color: #6EFF4B;">Services</a></li>
-    <li><a href="/recommended" style="color: #6EFF4B;">Recomemended</a></li>
+    <li><a href="/" class="side-text-b">Home</a></li>
+    <li><a href="/departments" class="side-text-g">Departaments</a></li>
+    <li><a href="/popular" class="side-text-g">Popular</a></li>
+    <li><a href="/sales" class="side-text-g">Sales</a></li>
+    <li><a href="/services" class="side-text-g">Services</a></li>
+    <li><a href="/recommended" class="side-text-g">Recomemended</a></li>
   </ul>
 </div>

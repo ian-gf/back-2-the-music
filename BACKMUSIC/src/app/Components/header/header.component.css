@@ -30,6 +30,34 @@
     height: 100px;
 }
 
+.top-bar{
+    background-color: #1a1a1a !important;
+    height: 105px !important;
+}
+
+.top-row{
+    background-color: #FF1E96 !important;
+    margin-top: 41px !important;
+}
+
+.top-btns{
+    height: 60px;
+    margin-left: 180px;
+}
+
+.side-img{
+    height: 300px;
+    width: 300px;
+}
+
+.side-text-g{
+    color: #6EFF4B;
+}
+
+.side-text-b{
+    color: #3DFFF8;
+}
+
 .btn-floating{
     margin-left: 5px;
     margin-top: 6px;
@@ -39,7 +67,7 @@
 }
 
 .sidenav{
-    background-color: #FF1E96;
+    background-color: #121212;
 }
 
 .navbtn{
@@ -125,3 +153,20 @@
     box-shadow: 0 8px 17px 0 #6EFF4B, 0 6px 20px 0 #6EFF4B;
     color: #6EFF4B;
   }
+
+.modal{
+    background-color: #212121;
+}
+
+.modal-content{
+    color:#3DFFF8
+}
+
+.modal-footer{
+    background-color: #212121;
+    
+}
+
+.btn-flat{
+    color:white;
+}

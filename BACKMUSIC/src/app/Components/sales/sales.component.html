@@ -10,16 +10,16 @@
     </div>
 
     <div class="col s12 l9 " style="background-color: #212121;">
-        <app-products *ngFor="let product of productService.products" [data]= "product"></app-products>
+        <app-products-sale *ngFor="let product of productService.products" [data]= "product"></app-products-sale>
 
         <!-- Modal Structure -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
+        <div id="modal1" class="modal" >
+
+            <div class="modal-content" style="background-color: #212121 !important;  height:400px;">
                 <app-landing-page></app-landing-page>
+                <a href="/cart" class="modal-close waves-effect waves-green btn-flat">Add to cart</a>
             </div>
-            <div class="modal-footer">
-            <a href="/cart" class="modal-close waves-effect waves-green btn-flat">Add to cart</a>
-            </div>
+        
         </div>
 
     </div>

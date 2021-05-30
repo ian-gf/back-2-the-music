@@ -22,6 +22,7 @@ import { HeadphonesComponent } from './Components/product-depts/Headphones/headp
 import { ElectronicDrumsComponent } from './Components/product-depts/Electronic-Drums/electronic-drums.component';
 import { DJGearComponent } from './Components/product-depts/DJ-Gear/dj-gear.component';
 import { ControllersComponent } from './Components/product-depts/Controllers/controllers.component';
+import { ProductsSaleComponent } from './Components/products-sale/products-sale.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ControllersComponent } from './Components/product-depts/Controllers/con
     HeadphonesComponent,
     ElectronicDrumsComponent,
     DJGearComponent,
-    ControllersComponent
+    ControllersComponent,
+    ProductsSaleComponent
     
   ],
   imports: [

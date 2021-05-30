@@ -14,6 +14,10 @@ export class HeaderComponent implements OnInit {
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems,{});
+
+      var elems2 = document.querySelectorAll('.modal');
+      var instances2 = M.Modal.init(elems2, {});
+      
     });
   }
 

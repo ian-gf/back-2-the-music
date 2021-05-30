@@ -11,7 +11,7 @@ export class ProductsService {
   REC_URL="http://localhost:3000/api/productos/rec/";
   SER_URL="http://localhost:3000/api/productos/ser/";
   POP_URL="http://localhost:3000/api/productos/pop/";
-  SALE_URL="http://localhost:3000/api/productos/sales/"
+  SALE_URL="http://localhost:3000/api/productos/sales/";
 
   products: Producto[] | undefined;
 
@@ -19,6 +19,10 @@ export class ProductsService {
 
   getProducts(){
     return this.http.get<Producto[]>(this.API_URL);
+  }
+
+  getProduct(name: string | undefined){
+    return this.http.get<Producto[]>(this.API_URL+name);
   }
 
   getProductsbyCategory(cat: string | undefined){
